@@ -32,9 +32,7 @@
     "sanity-plugin-table": "^2.3.0",
     "styled-components": "^5.2.0"
   },
-  "devDependencies": {
-    "@sanity/cli": "^3.93.0"
-  },
+  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "https://github.com/surjithctly/pajamas.git"
