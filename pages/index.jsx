@@ -13,7 +13,7 @@ export default function LandingPage() {
               <Image
                 src="/img/logo.svg"
                 alt="Allsafe Logo"
-                width={180}
+                width={154}
                 height={34}
                 className="w-6 h-6 object-contain"
               />
@@ -143,15 +143,10 @@ export default function LandingPage() {
               <pre className="language-js">
                 <code>
                   {`// #!/bin/bash\n`}
-                  {`@-\n`}
-                  <span className="text-blue-400">display-mode</span>{` = 1\n  `}
-                  <span className="text-blue-400">screen_name</span>{` = "TCP Port Scan Result"\n  `}
-                  <span className="text-blue-400">table_columns</span>{` = "IP Address, Port, Status"\n  `}
-                  <span className="text-blue-400">$</span>{` \n`}
-                  <span className="text-blue-400"># Use nmap to scan common TCP ports on subnet</span>{` \n  `}
-                  <span className="text-blue-400">echo</span>{` =  "$ip $port Open"\n  `}
-                  <span className="text-blue-400">$</span>{` \n`}
-                  <span className="text-blue-400">-@</span>{` \n`}
+                  {"@-\ndisplay-mode=1\nscreen_name=\"TCP Port Scan Result\"\ntable_columns=\"IP Address, Port, Status\"\n$"}
+                  {`\n# Use nmap to scan common TCP ports on subnet\n`}
+                  {"echo \"$ip $port Open\""}
+                  {"\n$\n-@"}
                 </code>
               </pre>
               {/* Optional SVG Decoration */}
@@ -168,7 +163,7 @@ export default function LandingPage() {
       {/* Additional Features */}
       <div className="max-w-4xl mx-auto px-5 mt-40">
         <div className="text-center">
-          <h2 className="font-semibold text-3xl">Features You'll Love</h2>
+          <h2 className="font-semibold text-3xl">Features You&apos;ll Love</h2>
           <p className="max-w-md mx-auto mt-2 text-gray-500">Allsafe gives you everything you need to run and secure your infrastructure with ease.</p>
         </div>
         <div className="grid md:grid-cols-2 gap-10 mt-10">
