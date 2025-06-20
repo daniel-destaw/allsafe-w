@@ -47,14 +47,16 @@ export default function LandingPage() {
       </header>
 
       {/* Background Gradient */}
-      <div className="fixed inset-0 [background:radial-gradient(circle_at_15%_50%,rgb(237,233,254),rgb(255_255_255/0)25%),radial-gradient(circle_at_85%_30%,rgb(216,243,246),rgb(255_255_255/0)25%)] opacity-40 -z-10"></div>
-
+    <div className="fixed inset-0 [background:radial-gradient(circle_at_15%_50%,#ece6fa,#ffffff00_40%),radial-gradient(circle_at_85%_30%,#d6f0fb,#ffffff00_40%)] opacity-70 -z-10"></div>
       {/* Hero Section */}
       <div className="max-w-2xl text-center mx-auto py-24 px-5">
         <span className="p-4 text-white inline-flex rounded-full">
           <img src="/img/allsafe.svg" alt="Allsafe Icon" className="w-16 h-16" />
         </span>
-        <h1 className="text-3xl md:text-6xl font-bold tracking-tight mt-2">Run your servers with plugins from Allsafe</h1>
+         <h1 className="text-3xl md:text-4xl font-bold tracking-tight mt-2">
+          <span className="block">Run on your servers, your way</span>
+          <span className="block">with Allsafe plugins</span>
+        </h1>
         <p className="mt-3 text-gray-500 md:text-lg">A modular, plugin-driven platform for automating, monitoring, and managing servers at scale — built for DevOps and system administrators.</p>
         <div className="flex justify-center flex-col md:flex-row mt-5 gap-3">
           <span className="bg-violet-100 flex gap-5 items-center justify-between py-3 px-5 rounded-full">
