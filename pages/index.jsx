@@ -185,7 +185,8 @@ export default function LandingPage() {
       {/* Additional Features */}
       <div className="max-w-4xl mx-auto px-5 mt-40">
         <div className="text-center">
-          <h2 className="font-semibold text-3xl">Features You'll Love</h2>
+          {/* ✅ Fixed: Escaped ' in JSX */}
+          <h2 className="font-semibold text-3xl">{"Features You'll Love"}</h2>
           <p className="max-w-md mx-auto mt-2 text-gray-500">Allsafe gives you everything you need to run and secure your infrastructure with ease.</p>
         </div>
         <div className="grid md:grid-cols-2 gap-10 mt-10">
