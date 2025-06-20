@@ -28,7 +28,7 @@ export default function LandingPage() {
             Documentation
           </a>
           <a
-            href="https://allsafe.io/download" 
+            href="https://github.com/daniel-destaw/AllSafe-SecureScan" 
             target="_blank"
             rel="noopener"
             className="hidden sm:inline-flex items-center gap-1 text-sm border-b text-slate-900 hover:text-violet-500 hover:border-violet-200"
@@ -37,7 +37,7 @@ export default function LandingPage() {
             <div className="w-3 h-3 bg-gray-400"></div>
           </a>
           <a
-            href="https://github.com/allsafe" 
+            href="https://github.com/daniel-destaw/AllSafe-SecureScan" 
             target="_blank"
             rel="noopener"
           >
@@ -51,10 +51,8 @@ export default function LandingPage() {
 
       {/* Hero Section */}
       <div className="max-w-2xl text-center mx-auto py-24 px-5">
-        <span className="p-4 bg-violet-500 text-white inline-flex rounded-full">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="white"/>
-          </svg>
+        <span className="p-4 text-white inline-flex rounded-full">
+          <img src="/img/allsafe.svg" alt="Allsafe Icon" className="w-16 h-16" />
         </span>
         <h1 className="text-3xl md:text-6xl font-bold tracking-tight mt-2">Run your servers with plugins from Allsafe</h1>
         <p className="mt-3 text-gray-500 md:text-lg">A modular, plugin-driven platform for automating, monitoring, and managing servers at scale — built for DevOps and system administrators.</p>
@@ -140,15 +138,20 @@ export default function LandingPage() {
               </div>
             </div>
             <div className="rounded-3xl rounded-t-none bg-gray-900 overflow-x-auto text-gray-100 text-sm md:text-base p-8 relative">
-              <pre className="language-js">
+
                 <code>
-                  {`// #!/bin/bash\n`}
-                  {"@-\ndisplay-mode=1\nscreen_name=\"TCP Port Scan Result\"\ntable_columns=\"IP Address, Port, Status\"\n$"}
-                  {`\n# Use nmap to scan common TCP ports on subnet\n`}
-                  {"echo \"$ip $port Open\""}
-                  {"\n$\n-@"}
+                  <span className="text-green-400">#!/bin/bash</span><br />
+                  <span className="text-purple-400">@-</span><br />
+                  <span className="text-blue-400">display-mode=1</span><br />
+                  <span className="text-blue-400">screen_name=</span><span className="text-yellow-300">"TCP Port Scan Result"</span><br />
+                  <span className="text-blue-400">table_columns=</span><span className="text-yellow-300">"IP Address, Port, Status"</span><br />
+                  <span className="text-purple-400">$</span><br />
+                  <span className="text-gray-400"># Use nmap or ssh syntax</span><br />
+                  <span className="text-blue-400">echo </span><span className="text-yellow-300">"$ip $port Open"</span><br />
+                  <span className="text-purple-400">$</span><br />
+                  <span className="text-purple-400">-@</span>
                 </code>
-              </pre>
+
               {/* Optional SVG Decoration */}
               <svg className="absolute top-0 left-0 w-full h-full pointer-events-none opacity-5" viewBox="0 0 800 600" fill="none">
                 <path d="M0 0L800 0L800 600L0 600Z" stroke="white" strokeWidth="1" />
@@ -238,16 +241,16 @@ export default function LandingPage() {
       <div className="border-t mt-20">
         <footer>
           <div className="flex flex-col md:flex-row gap-3 items-center justify-between py-10 max-w-screen-lg mx-auto text-sm px-5 text-gray-500">
-            <p>© 2025 <a href="https://allsafe.io"  target="_blank" rel="noopener">Allsafe</a>. All rights reserved.</p>
+            <p>© 2025 <a href="https://github.com/daniel-destaw/AllSafe-SecureScan"  target="_blank" rel="noopener">Allsafe</a>. All rights reserved.</p>
             <nav className="flex gap-5">
               <a href="/terms" target="_blank" rel="noopener noreferrer">Terms</a>
               <a href="/license" target="_blank" rel="noopener noreferrer">License</a>
               <a href="/faq" target="_blank" rel="noopener noreferrer">FAQ</a>
             </nav>
           </div>
-          <a href="https://allsafe.io/pro"  target="_blank" rel="noopener" className="fixed flex px-3 py-1 space-x-2 text-sm font-semibold text-gray-900 bg-white border border-gray-300 rounded shadow-sm place-items-center right-5 bottom-5">
+          <a href="https://github.com/daniel-destaw/AllSafe-SecureScan"  target="_blank" rel="noopener" className="fixed flex px-3 py-1 space-x-2 text-sm font-semibold text-gray-900 bg-white border border-gray-300 rounded shadow-sm place-items-center right-5 bottom-5">
             <div className="w-4 h-4 bg-gray-400"></div>
-            <span>Pro Version</span>
+            <span>Allsafe</span>
           </a>
         </footer>
       </div>
