@@ -17,16 +17,23 @@ export default function Navbar(props) {
         !props.noborder && "border-b",
         !props.nobg && "bg-white",
         !props.static && "sticky top-0 z-10",
-        " flex items-center justify-between px-5 py-3  "
-      )}>
+        "flex items-center justify-between px-5 py-3"
+      )}
+    >
       <div className="flex items-center gap-2">
         <div className="md:hidden flex items-center">
           <MobileMenu sidebar={props.sidebar} active={props.active} />
         </div>
         <Link href="/">
-          <a className="flex">
-            {/* `flex` class added to avoid spacing issues in image span */}
-            <Image src={Logo} alt="Sandocs" />
+          <a className="flex items-center">
+            {/* Small logo: w-6 h-6 = ~24px width/height */}
+            <Image
+              src={Logo}
+              alt="Allsafe"
+              width={154}
+              height={34}
+              className="w-6 h-6 object-contain"
+            />
           </a>
         </Link>
       </div>
@@ -40,14 +47,16 @@ export default function Navbar(props) {
           href="http://web3templates.com"
           target="_blank"
           rel="noopener"
-          className="hidden sm:inline-flex items-center gap-1 text-sm border-b text-slate-900 hover:text-violet-500 hover:border-violet-200 focus-visible:bg-violet-100 focus-visible:border-violet-100 focus-visible:outline-4 focus-visible:outline-violet-100">
+          className="hidden sm:inline-flex items-center gap-1 text-sm border-b text-slate-900 hover:text-violet-500 hover:border-violet-200 focus-visible:bg-violet-100 focus-visible:border-violet-100 focus-visible:outline-4 focus-visible:outline-violet-100"
+        >
           <span>Download</span>
           <ExternalLinkIcon className="w-3 h-3" />
         </a>
         <a
           href="http://github.com/web3templates"
           target="_blank"
-          rel="noopener">
+          rel="noopener"
+        >
           <GitHubLogoIcon className="w-5 h-5" />
         </a>
         <a href="#" className="hidden">
